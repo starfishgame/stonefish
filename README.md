@@ -1,2 +1,2 @@
 # stonefish
-Load testing socked I/0 traffic
+Load testing websocket I/0 traffic
