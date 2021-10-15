@@ -1,0 +1,12 @@
+config:
+  target: 'http://10.64.225.110/'
+  phases:
+    - duration: 6
+      arrivalRate: 2
+scenarios:
+  - flow:
+    - get:
+        url: "/nsxt/api/v1/logical-switches"
+          
+        expect:
+            - statusCode: 200
