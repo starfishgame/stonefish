@@ -1,12 +1,13 @@
 config:
-  target: 'http://10.64.225.110/'
+  target: "https://www.starfish.cool:4200"
   phases:
-    - duration: 6
-      arrivalRate: 2
+    - duration: 5
+      arrivalRate: 1
+  engines:
+   socketio-v3: {}
+
 scenarios:
-  - flow:
-    - get:
-        url: "/nsxt/api/v1/logical-switches"
-          
-        expect:
-            - statusCode: 200
+  - name: My first scenario
+    engine: socketio-v3
+    flow:
+      - emit: ["hello"]
