@@ -13,6 +13,5 @@ scenarios:
       # wait for the WebSocket upgrade (optional)
       - think: 1
 
-      # basic emit
       - emit:
           channel: "hello"
