@@ -4,7 +4,7 @@
   "description": "Load testing websocket I/0 traffic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "artillery run --output report.json websocket_test.yml"
   },
   "repository": {
     "type": "git",
